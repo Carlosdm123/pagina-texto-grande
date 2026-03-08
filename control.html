@@ -234,9 +234,9 @@ background:#38a77f;
 
 <div class="inputArea">
 
-<textarea id="newText" maxlength="165"></textarea>
+<textarea id="newText" maxlength="130"></textarea>
 
-<div class="counter" id="counter">0 / 165</div>
+<div class="counter" id="counter">0 / 130</div>
 
 <div class="error" id="errorMsg">límite máximo de caracteres</div>
 
@@ -393,9 +393,9 @@ function updateCounter(){
 
 const len=textarea.value.length;
 
-counter.innerText=len+" / 165";
+counter.innerText=len+" / 130";
 
-if(len>140){
+if(len>110){
 counter.classList.add("warning");
 textarea.classList.add("limit");
 }else{
@@ -403,7 +403,7 @@ counter.classList.remove("warning");
 textarea.classList.remove("limit");
 }
 
-if(len>=165){
+if(len>=130){
 errorMsg.style.display="block";
 }else{
 errorMsg.style.display="none";
